@@ -1,4 +1,4 @@
-package a3;
+package Prototype;
 
 import java.io.*;
 //import java.io.OutputStreamWriter;

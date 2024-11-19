@@ -1,4 +1,4 @@
-package a3;/*
+package Prototype;/*
  * Client.java
  *
  * A client for accessing the records database

@@ -1,4 +1,4 @@
-package a3;
+package Prototype;
 import java.net.Socket;
 import java.net.ServerSocket;
 import java.net.InetAddress;
