@@ -54,8 +54,8 @@ To keep the project manageable within the scope of a prototype, the following fe
 ### ⬇️ Installation
 
 ## 📱 Usage
-### 🌱 Core Features
 
+### 🌱 Core Features
 **Ingredient-Based Recipe Suggestions**
 - Based on existing data captured by the the SSH cameras, the system will provide recipe suggestions that match these ingredients.
 - Alternatively, students can manually input a list of available ingredients or remove all filters to view all recipes.
