@@ -21,20 +21,12 @@
 
 ### 💻 Tech Stack
 
-#### Front-end:
-- [![React][React.js]][React-url]
-    - ![HTML]
-    - ![CSS]
-    - ![JavaScript]
-#### Back-end:
-- [![Spring_boot][Spring_boot]][Spring_boot-url]
-    - [![Java][Java]][Java-url]
-#### Database:
-- [![MongoDB][MongoDB]][MongoDB-url]
-- [![Postgres][Postgres]][Postgres-url]
-#### Build-tool:
-- [![Gradle][Gradle]][Gradle-url]
-
+| **Frontend**                                     | **Backend**                                                   | **Database**                                  | **Build Tool**                              |
+|--------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------|---------------------------------------------|
+| [![React][React.js]][React-url]                 | [![Spring Boot][Spring_boot]][Spring_boot-url]               | [![MongoDB][MongoDB]][MongoDB-url]           | [![Gradle][Gradle]][Gradle-url]             |
+| ![HTML]                                         | [![Java][Java]][Java-url]                                     | [![Postgres][Postgres]][Postgres-url]         |                                             |
+| ![CSS]                                          |                                                               |                                               |                                             |
+| ![JavaScript]                                   |                                                               |                                               |                                             |
 
 ## 🛠️ Getting Started
 
