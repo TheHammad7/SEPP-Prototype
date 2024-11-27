@@ -1,10 +1,10 @@
 # 🍲 Recipe Suggestion Feature: Prototype
 
 ### 📖 Table of Contents
-- [Project Overview](#project-overview)
+- [Project Overview](#-project-overview)
     - [Objectives](#-objectives)
     - [Tech Stack](#-tech-stack)
-- [Getting Started](#getting-started)
+- [Getting Started](#️-getting-started)
     - [Pre-requisites](#-pre-requisites)
     - [Installation](#️-installation)
 - [Usage](#-usage)
@@ -93,6 +93,7 @@ Once all prerequisites are installed, follow the setup instructions to run the a
 - [Casey Shea][Casey-github]
 
 ## ⚖️ License
+> Apparenty it is quite common to include a license. 👀 Please refer our options [here][Choose-license-url] so that we can add one closer to time of submission. *- Casey*
 
 ## 🙌🏼 Acknowledgements
 > If we end up using any tools or resources from other developers/ creators within our prototype, please acknowledge them here!!
@@ -121,3 +122,5 @@ Once all prerequisites are installed, follow the setup instructions to run the a
 [Myles-github]: https://github.com/Sh4dow15
 [Grace-github]: https://github.com/gracejdaniels
 [Casey-github]: https://github.com/casey-shea05
+
+[Choose-license-url]: https://choosealicense.com/
