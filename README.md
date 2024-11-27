@@ -14,7 +14,7 @@
 - [Acknowledgements](#-acknowledgements)
 
 ## 🔍 Project Overview
-As mentioned previously in the proposed Engineering Design Reviews, the new Recipe Suggestion Feature will recommend recipes to students based on the existing ingredients in their fridge. We do this by leveraging the data collected by the SSH cameras.
+As mentioned previously in the proposed [Engineering Design Reviews](EDRs/README.md), the new Recipe Suggestion Feature will recommend recipes to students based on the existing ingredients in their fridge. We do this by leveraging the data collected by the SSH cameras.
 
 The purpose of this prototype is to showcase the effectiveness of the proposed design in reducing food waste and simplifying meal planning.
 
