@@ -19,14 +19,14 @@ As mentioned previously in the proposed Engineering Design Reviews, the new Reci
 The purpose of this prototype is to showcase the effectiveness of the proposed design in reducing food waste and simplifying meal planning.
 
 ### 🎯 Objectives
-This prototype aims to:
+#### This prototype aims to:
 1. Provide a **user-friendly interface** for inputting ingredients and viewing recipe suggestions.
 
 2. Demonstrate the effectiveness of **ingredient-based filtering** to match recipes.
 
 3. Serve as a **foundation for future development**, including additional features and scalability.
 
-To keep the project manageable within the scope of a prototype, the following features are ***excluded***:
+#### To keep the project manageable within the scope of a prototype, the following features are ***excluded***:
 1. **User Authentication:** No user accounts or login functionality.
 
 2. **Custom Recipe Input:** Students cannot add or save their own recipes.
