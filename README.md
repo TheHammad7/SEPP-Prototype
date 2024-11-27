@@ -38,6 +38,7 @@ To keep the project manageable within the scope of a prototype, the following fe
 5. **Mobile or Responsive Design:** The prototype is optimized for desktop use only.
 
 ### 💻 Tech Stack
+> This may change depending on how development goes. Just popping it in here as a way of scoping out our options. 😁 *- Casey*
 
 | **Frontend**            | **Backend**             | **Database**          | **Build Tool**       |
 |--------------------------|-------------------------|------------------------|-----------------------|
@@ -50,10 +51,22 @@ To keep the project manageable within the scope of a prototype, the following fe
 ## 🛠️ Getting Started
 
 ### 📋 Pre-requisites
+> ⚠️ Warning: This is probably not correct so will need to be revised closer to the deadline. 😅 Just putting it in as a placeholder. *- Casey*
+
+Before running the Prototype on your local machine, ensure the following pre-requisites are met:
+
+- **Java 17 or higher:** Required for running the backend application.
+- **Gradle:** To build and manage backend dependencies.
+- **MongoDB:** Either locally installed or a cloud-based MongoDB instance (e.g., MongoDB Atlas).
+- **Node.js:** For running the React frontend.
+- **Development Tools:** A code editor (e.g., IntelliJ IDEA or Visual Studio Code) and Postman for API testing.
+
+Once all prerequisites are installed, follow the setup instructions to run the application.
 
 ### ⬇️ Installation
-
+> Too lazy do it now but basically we should try to include step-by-step instructions on how to set up and configure everything. 😂 *- Casey*
 ## 📱 Usage
+> Feel free to add screensots, code snippets and extra details to outline usage where relevant.
 
 ### 🌱 Core Features
 **Ingredient-Based Recipe Suggestions**
@@ -74,10 +87,15 @@ To keep the project manageable within the scope of a prototype, the following fe
 - Recipe results are displayed dynamically based on the user’s input
 
 ## ✨Credits
+- [Hammad Imran][Hammad-github]
+- [Myles Campbell][Myles-github]
+- [Grace Daniels][Grace-github]
+- [Casey Shea][Casey-github]
 
 ## ⚖️ License
 
 ## 🙌🏼 Acknowledgements
+> If we end up using any tools or resources from other developers/ creators within our prototype, please acknowledge them here!!
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -98,3 +116,8 @@ To keep the project manageable within the scope of a prototype, the following fe
 [Postgres-url]: https://www.postgresql.org/
 [Gradle]: https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white
 [Gradle-url]: https://gradle.org/
+
+[Hammad-github]: https://github.com/TheHammad7
+[Myles-github]: https://github.com/Sh4dow15
+[Grace-github]: https://github.com/gracejdaniels
+[Casey-github]: https://github.com/casey-shea05
