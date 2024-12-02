@@ -113,7 +113,8 @@ Once all prerequisites are installed, follow the setup instructions to run the a
 [Java-url]: https://www.java.com/
 [MongoDB]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
 [MongoDB-url]: https://www.mongodb.com/
-[Postgres]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
+[Gradle]: https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white
+[Gradle-url]: https://gradle.org/
 
 [Hammad-github]: https://github.com/TheHammad7
 [Myles-github]: https://github.com/Sh4dow15
