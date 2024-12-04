@@ -11,11 +11,11 @@ export const getMessages = async () => {
         throw error;
     }
 };
-export const fetchRecipes = async function fetchRecipes(ingredients) {
-    const response = await axios.post(`${API_URL}/api/recipes, ingredients`);
-    alert('Success');
-    return response.data;
-  };
+
+async function fetchRecipes(ingredients) {
+  const response = await axios.post(`${API_URL}/api/recipes`, ingredients);
+  return response.data;
+}
 export const saveMessage = async (content) => {
     try {
         const response = await axios.post(`${API_URL}/{id}`, { content });
