@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080';
+const API_URL = 'http://localhost:8080/api';
+
 
 export const getMessages = async () => {
     try {
@@ -12,16 +13,15 @@ export const getMessages = async () => {
     }
 };
 
-async function fetchRecipes(ingredients) {
-  const response = await axios.post(`${API_URL}/api/recipes`, ingredients);
-  return response.data;
-}
-export const saveMessage = async (content) => {
+export const fetchRecipes = async function fetchRecipes(id,ingredients) {
     try {
-        const response = await axios.post(`${API_URL}/{id}`, { content });
+        alert('Processing...');
+        const response = await axios.post(`${API_URL}/recipes/${id}`, ingredients);
+        alert('Received ingredients');
         return response.data;
     } catch (error) {
-        console.error('Error saving message:', error);
+        console.error("Error fetching recipes:", error);
+        alert('Failed to fetch recipes. Please try again.');
         throw error;
     }
-};
+}
