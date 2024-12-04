@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getMessages, saveMessage } from '../services/apiService';
+import { getMessages, saveMessage, fetchRecipes } from '../services/apiService';
 
 const MessageComponent = () => {
     const [messages, setMessages] = useState([]);
@@ -20,7 +20,9 @@ const MessageComponent = () => {
 
     const handleSaveMessage = async () => {
         try {
-            await saveMessage(newMessage);
+            await fetchRecipes(newMessage);
+            alert ('sent message');
+            
             fetchMessages();
             setNewMessage('');
         } catch (error) {
