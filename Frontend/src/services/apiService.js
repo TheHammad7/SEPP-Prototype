@@ -12,6 +12,10 @@ export const getMessages = async () => {
     }
 };
 
+async function fetchRecipes(ingredients) {
+  const response = await axios.post(`${API_URL}/api/recipes`, ingredients);
+  return response.data;
+}
 export const saveMessage = async (content) => {
     try {
         const response = await axios.post(`${API_URL}/{id}`, { content });
