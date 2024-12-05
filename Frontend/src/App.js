@@ -11,7 +11,7 @@ const RecipeFinder = () => {
   const handleSearch = async () => {
     try {
       // Split the ingredients input into an array and trim any spaces
-      const ingredientList = ingredients.split(',').map(ingredient => ingredient.trim());
+      const ingredientList = ingredients.split(',').map(ingredient => ingredient.trim().charAt(0).toUpperCase() + ingredient.trim().slice(1).toLowerCase());
 
       // Send POST request to the backend
       const response = await axios.post('http://localhost:8080/recipes/find',ingredientList,{
