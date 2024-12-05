@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import MessageComponent from './components/MessageComponent';
 import axios from 'axios';
 
 const RecipeFinder = () => {
