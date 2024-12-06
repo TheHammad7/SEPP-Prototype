@@ -12,7 +12,7 @@ import org.bson.conversions.Bson;
 
 import java.util.List;
 
-import static com.mongodb.client.model.Filters.all;
+import static com.mongodb.client.model.Filters.in;
 
 @SpringBootApplication
 @RestController
@@ -36,8 +36,8 @@ public class RecipeFinderApplication {
     public List<Document> findRecipes(@RequestBody List<String> ingredients) {
         System.out.println("Received Ingredients: " + ingredients);
         // Build query to check if all provided ingredients are in the recipe
-        Bson filter = all("ingredients.name", ingredients);
-
+        Bson filter = in("ingredients.name", ingredients);
+        
         // Query the database and return matching recipes
         return recipeCollection.find(filter).into(new java.util.ArrayList<>());
     }
