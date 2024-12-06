@@ -35,15 +35,35 @@ const RecipeFinder = () => {
   };
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Student Smart Recipes</h1>
-        <input
+      <header className="header">
+        <h2 className='ssh'>SSH</h2>
+        
+      </header>
+      <h1 className='title'>Student Smart Recipes</h1>
+      <p style={{fontSize: 30,
+      fontWeight: 700,
+      left: 0,
+      letterSpacing: 0,
+      marginLeft: '5%',
+      }}>Filter recipes by:</p>
+      <body className='filterBar'>
+        
+        <input className='searchBox'
         type="text"
         placeholder="Enter ingredients (comma separated)"
         value={ingredients}
         onChange={(e) => setIngredients(e.target.value)}
       />
-      <button onClick={handleSearch}>Find Recipes</button>
+      <button onClick={handleSearch} 
+      style={{fontSize: '10px'+ '2vmin',
+        width: '30%',
+        marginTop:'2%',
+        marginBottom:'2%',
+        fontSize:32,
+        fontWeight: 600,
+        textAlign: 'center',
+        }}>Find Recipes</button>
+        </body>
 
       {error && <div style={{ color: 'red' }}>{error}</div>}
       
@@ -70,9 +90,11 @@ const RecipeFinder = () => {
               </li>
             ))}
           </ul>
+          
         </div>
+        
       )}
-      </header>
+      
     </div>
   );
 };
