@@ -18,8 +18,16 @@ const RecipeFinder = () => {
           'Content-Type': 'application/json',
         },
       })
+      //Filter for missing ingredients only
+      const filteredRecipes = response.data.map((recipe) => ({
+        name: recipe.name,
+        description: recipe.description,
+        ingredients: recipe.ingredients.filter(
+          (ingredient) => !ingredientList.includes(ingredient.name)
+        ),
+      }))
       // Update the state with the recipes returned from the server
-      setRecipes(response.data);
+      setRecipes(filteredRecipes);
     } catch (err) {
       setError('Error fetching recipes. Please try again.');
       console.error(err);
@@ -46,7 +54,19 @@ const RecipeFinder = () => {
             {recipes.map((recipe, index) => (
               <li key={index}>
                 <h3>{recipe.name}</h3>
-                <p>{recipe.description}</p>
+                <p>Description: {recipe.description}</p>
+                
+                {recipe.ingredients.length > 0 ? (
+                <ul>
+                  <h5>Missing Ingredients:</h5>
+                  {recipe.ingredients.map((ingredient, i) => (
+                    <li key={i}>{ingredient.name}</li>
+
+                    ))}</ul>
+                  
+                ):(
+                  <h5>No Missing Ingredients!</h5>
+                )}
               </li>
             ))}
           </ul>
