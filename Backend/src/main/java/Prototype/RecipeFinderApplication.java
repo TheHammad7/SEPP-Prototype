@@ -34,10 +34,9 @@ public class RecipeFinderApplication {
 
     @PostMapping("/find")
     public List<Document> findRecipes(@RequestBody List<String> ingredients) {
-        System.out.println("Received Ingredients: " + ingredients);
         // Build query to check if all provided ingredients are in the recipe
         Bson filter = in("ingredients.name", ingredients);
-        
+
         // Query the database and return matching recipes
         return recipeCollection.find(filter).into(new java.util.ArrayList<>());
     }
