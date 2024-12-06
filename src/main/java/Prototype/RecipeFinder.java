@@ -1,11 +1,16 @@
 package Prototype;
-import com.mongodb.client.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
+
 import org.bson.Document;
-import org.bson.conversions.Bson;
 
-import java.util.*;
-
-import static com.mongodb.client.model.Filters.*;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 
 public class RecipeFinder {
     public static void main(String[] args) {
