@@ -20,28 +20,28 @@ public class RecipeFinder {
             MongoDatabase database = mongoClient.getDatabase("recipes");
             MongoCollection<Document> recipeCollection = database.getCollection("recipes");
 
-            // Get user input for available ingredients
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter the ingredients you have (comma-separated):");
-            String input = scanner.nextLine();
-            List<String> availableIngredients = Arrays.asList(input.split("\\s*,\\s*"));
-
-            // Find and process recipes
-            List<Recipe> recipesWithMissingIngredients = findRecipesWithMissingIngredients(recipeCollection, availableIngredients);
-
-            // Sort recipes by number of missing ingredients
-            recipesWithMissingIngredients.sort(Comparator.comparingInt(Recipe::getMissingIngredientCount));
-
-            // Display recipes
-            if (recipesWithMissingIngredients.isEmpty()) {
-                System.out.println("No recipes found.");
-            } else {
-                System.out.println("Recipes you can make (sorted by least missing ingredients):");
-                for (Recipe recipe : recipesWithMissingIngredients) {
-                    System.out.println(recipe.getName() + " (" + recipe.getMissingIngredientCount() + " missing): " +
-                            recipe.getMissingIngredients());
+            try (Scanner scanner = new Scanner(System.in)) {
+                System.out.println("Enter the ingredients you have (comma-separated):");
+                String input = scanner.nextLine();
+                List<String> availableIngredients = Arrays.asList(input.split("\\s*,\\s*"));
+            
+                // Find and process recipes
+                List<Recipe> recipesWithMissingIngredients = findRecipesWithMissingIngredients(recipeCollection, availableIngredients);
+            
+                // Sort recipes by number of missing ingredients
+                recipesWithMissingIngredients.sort(Comparator.comparingInt(Recipe::getMissingIngredientCount));
+            
+                // Display recipes
+                if (recipesWithMissingIngredients.isEmpty()) {
+                    System.out.println("No recipes found.");
+                } else {
+                    System.out.println("Recipes you can make (sorted by least missing ingredients):");
+                    for (Recipe recipe : recipesWithMissingIngredients) {
+                        System.out.println(recipe.getName() + " (" + recipe.getMissingIngredientCount() + " missing): " +
+                                recipe.getMissingIngredients());
+                    }
                 }
-            }
+            }            
         }
     }
 
