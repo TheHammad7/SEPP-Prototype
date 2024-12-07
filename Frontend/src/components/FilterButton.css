@@ -1,0 +1,24 @@
+.FilterButton {
+    width: 165px; /* Default width */
+    height: 50px; /* Default height */
+    padding: 12px 32px; /* Padding */
+    font-family: 'Inter', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Font weight */
+    color: #000; /* Default text color */
+    background: #D9D9D9; /* Default background color */
+    border: 1px solid #CCC; /* Border color */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor */
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .FilterButton:hover {
+    background: #E5E5E5; /* Background on hover */
+  }
+  
+  .FilterButton.active {
+    background: #9747FF; /* Active background color */
+    color: #FFF; /* Active text color */
+  }
+  

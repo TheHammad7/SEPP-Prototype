@@ -1,4 +1,5 @@
 import './App.css'
+import FilterButton from "./components/FilterButton";
 
 import MenuIcon from './assets/menu-icon.svg';
 import SSHLogo from './assets/ssh-logo.svg';
@@ -29,6 +30,11 @@ function App() {
       </div>
 
       <div className="FilterBar">
+        <div className="FilterButtons">
+          <FilterButton label="What's in my fridge?" />
+          <FilterButton label="Ingredient selection" />
+          <FilterButton label="Clear all filters" />
+        </div>
       </div>
     </div>
   );
