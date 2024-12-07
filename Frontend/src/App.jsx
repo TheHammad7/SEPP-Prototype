@@ -25,9 +25,11 @@ function App() {
 
       <img src={RecipeAppIcon} alt="Recipe App Icon" className="RecipeIcon" />
       <text className="AppTitle">Student Smart Recipes</text>
-      
+
       </div>
 
+      <div className="FilterBar">
+      </div>
     </div>
   );
 
