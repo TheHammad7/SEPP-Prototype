@@ -108,3 +108,11 @@ body {
   border-radius: 20px;
   background: #F5F5F5;
 }
+
+.FilterButtons {
+  position: absolute;
+  display: flex;
+  top: 31px;
+  right: 51px;
+  gap: 66px;
+}
