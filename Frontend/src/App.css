@@ -64,3 +64,13 @@ body {
 .Menu:hover .Menu-icon {
   opacity: 0.8;
 }
+
+.SSHLogo {
+  position: absolute;
+  width: 141px;
+  height: 66px;
+  top: 24px;
+  left: 1090px;
+  gap: 0px;
+  opacity: 0px;
+}

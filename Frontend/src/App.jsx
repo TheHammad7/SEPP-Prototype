@@ -1,6 +1,7 @@
 import './App.css'
 
-import MenuIcon from './assets/Mingcute Menu Fill.svg';
+import MenuIcon from './assets/menu-icon.svg';
+import SSHLogo from './assets/ssh-logo.svg';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <button className="Menu" onClick={handleMenuClick}>
           <img src={MenuIcon} alt="Menu" className="Menu-icon" />
         </button>
+        <img src={SSHLogo} alt="SSH Logo" className="SSHLogo" />
         </div>
       </div>
     </div>
