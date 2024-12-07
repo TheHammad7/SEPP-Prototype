@@ -4,8 +4,12 @@ function App() {
 
   return (
 
-    <div className="screen">
-      
+    <div className="MacbookAir1">
+      <div className="PageHeader"> 
+        <div className='Banner'>
+          
+        </div>
+      </div>
     </div>
   );
 

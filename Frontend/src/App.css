@@ -1,5 +1,26 @@
-.screen {
+body {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: flex-start; /* Keeps it aligned at the top */
+  margin: 0;
+  background-color: #D9D9D9; /* Optional background */
+}
+
+.MacbookAir1 {
   width: 1280px;
   height: 1600px;
   background: #FFF;
+}
+
+.PageHeader {
+  width: 1280px;
+  height: 250px;
+  flex-shrink: 0;
+}
+
+.Banner {
+  width: 1280px;
+  height: 115px;
+  flex-shrink: 0;
+  background: #F5F5F5;
 }
