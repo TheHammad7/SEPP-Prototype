@@ -74,3 +74,11 @@ body {
   gap: 0px;
   opacity: 0px;
 }
+
+.RecipeIcon {
+  position: absolute;
+  top: 40px;
+  left: 540px;
+  width: 160px;
+  height: 149px;
+}
