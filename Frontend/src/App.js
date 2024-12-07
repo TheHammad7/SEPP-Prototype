@@ -12,7 +12,7 @@ const RecipeFinder = () => {
       const ingredientList = ingredients
         .split(',')
         .map((ingredient) =>
-          ingredient.trim().charAt(0).toUpperCase() + ingredient.trim().slice(1).toLowerCase()
+          ingredient.trim().split(' ').map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ')
         );
 
       const response = await axios.post('http://localhost:8080/recipes/find', ingredientList, {
