@@ -22,7 +22,10 @@ function App() {
         </button>
         <img src={SSHLogo} alt="SSH Logo" className="SSHLogo" />
         </div>
-        <img src={RecipeAppIcon} alt="Recipe App Icon" className="RecipeIcon" />
+
+      <img src={RecipeAppIcon} alt="Recipe App Icon" className="RecipeIcon" />
+      <text className="AppTitle">Student Smart Recipes</text>
+      
       </div>
 
     </div>

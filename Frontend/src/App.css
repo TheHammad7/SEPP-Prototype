@@ -1,29 +1,28 @@
 body {
   display: flex;
-  justify-content: center; /* Centers screen horizontally */
-  align-items: flex-start; /* Keeps our screen aligned at the top */
+  justify-content: center;
+  align-items: flex-start;
   margin: 0;
-  background-color: #D9D9D9; /* Optional background */
+  background-color: #D9D9D9;
 }
 
 .MacbookAir1 {
-  width: 1280px;
+  width: 1280px; 
   height: 1600px;
   background: #FFF;
 }
 
 .PageHeader {
-  position: relative;
+  position: relative; 
   width: 1280px;
-  height: 250px;
-  flex-shrink: 0;
+  height: 250px; 
+  background: transparent;
 }
 
 .Banner {
   position: relative;
   width: 1280px;
   height: 115px;
-  flex-shrink: 0;
   background: #F5F5F5;
 }
 
@@ -57,9 +56,10 @@ body {
 
 .Menu-icon {
   width: 50px;
-  height: 50px; 
-  transition: opacity 0.2s ease-in-out; 
+  height: 50px;
+  transition: opacity 0.2s ease-in-out;
 }
+
 
 .Menu:hover .Menu-icon {
   opacity: 0.8;
@@ -71,14 +71,28 @@ body {
   height: 66px;
   top: 24px;
   left: 1090px;
-  gap: 0px;
-  opacity: 0px;
+  opacity: 1;
 }
 
 .RecipeIcon {
   position: absolute;
   top: 40px;
-  left: 540px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 160px;
   height: 149px;
+}
+
+.AppTitle {
+  position: absolute;
+  top: 189px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Inter', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: center;
+  color: #000;
+  width: 563px;
 }
