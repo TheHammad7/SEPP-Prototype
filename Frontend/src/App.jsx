@@ -1,5 +1,6 @@
 import './App.css'
 import FilterButton from "./components/FilterButton";
+import RecipeCard from "./components/RecipeCard";
 
 import MenuIcon from './assets/menu-icon.svg';
 import SSHLogo from './assets/ssh-logo.svg';
@@ -40,7 +41,23 @@ function App() {
         </div>
       </div>
 
-      
+      <div className='RecipeGrid'>
+        <RecipeCard label = "Panckes"/>
+        <RecipeCard label = "ScrambledEggs"/>
+        <RecipeCard label = "SpaghettiBolognese"/>
+        <RecipeCard label = "CaesarSalad"/>
+        <RecipeCard label = "VegetableStirFry"/>
+        <RecipeCard label = "GrillCheeseSando"/>
+        <RecipeCard label = "TomatoSoup"/>
+        <RecipeCard label = "ChickenCurry"/>
+        <RecipeCard label = "FrenchToast"/>
+        <RecipeCard label = "BeefTacos"/>
+        <RecipeCard label = "MashedPotatoes"/>
+        <RecipeCard label = "ChickenAlfredo"/>
+        <RecipeCard label = "ApplePie"/>
+        <RecipeCard label = "VegetableSoup"/>
+        <RecipeCard label = "ChocolateCake"/>
+      </div>
     </div>
   );
 

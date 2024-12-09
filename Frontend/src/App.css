@@ -127,3 +127,21 @@ body {
   right: 51px;
   gap: 60px;
 }
+
+.RecipeGrid {
+  position: absolute;
+  top: 533px;
+  left: 134px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+  gap: 49px;
+  justify-content: center;
+  align-content: start;
+  width: 1027px;
+  height: 964px;
+  border-radius: 25px;
+  background: transparent;
+}
+
+
