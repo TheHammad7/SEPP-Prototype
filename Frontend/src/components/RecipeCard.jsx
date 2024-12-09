@@ -4,6 +4,9 @@ import "./RecipeCard.css";
 const RecipeCard = () => {
   return (
     <div className="RecipeCard">
+        <div className="RecipeCardInfo">
+            
+        </div>
     </div>
   );
 };
