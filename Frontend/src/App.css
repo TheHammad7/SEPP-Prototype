@@ -98,6 +98,17 @@ body {
   width: 563px;
 }
 
+.FilterBarTitle {
+  position: absolute;
+  top: 323px;
+  left: 124px;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+}
+
 .FilterBar {
   position: absolute;
   left: 119px;

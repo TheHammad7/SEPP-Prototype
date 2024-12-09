@@ -30,6 +30,7 @@ function App() {
 
       </div>
 
+      <text className="FilterBarTitle">Filter recipes by:</text>
       <div className="FilterBar">
         <div className="FilterButtons">
           <img src={FilterIcon} alt="Filter Icon" className="FilterIcon" />
@@ -38,6 +39,8 @@ function App() {
           <FilterButton label="Clear all filters" />
         </div>
       </div>
+
+      
     </div>
   );
 
