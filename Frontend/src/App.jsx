@@ -1,11 +1,11 @@
 import './App.css'
-import FilterButton from "./components/FilterButton";
+import FilterButton from './components/FilterButton';
 import RecipeCard from "./components/RecipeCard";
 
 import MenuIcon from './assets/menu-icon.svg';
 import SSHLogo from './assets/ssh-logo.svg';
-import RecipeAppIcon from './assets/recipe-app-icon.svg'
-import FilterIcon from './assets/filter-icon.svg'
+import RecipeAppIcon from './assets/recipe-app-icon.svg';
+import FilterIcon from './assets/filter-icon.svg';
 
 function App() {
 
