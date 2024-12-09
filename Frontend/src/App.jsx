@@ -1,6 +1,7 @@
 import './App.css'
 import FilterButton from './components/FilterButton';
 import RecipeCard from "./components/RecipeCard";
+import recipes from './components/RecipeList';
 
 import MenuIcon from './assets/menu-icon.svg';
 import SSHLogo from './assets/ssh-logo.svg';
@@ -42,22 +43,17 @@ function App() {
       </div>
 
       <div className='RecipeGrid'>
-        <RecipeCard title = "Pancakes" cookingTime={30} image = './images/Pancakes.jpg'/>
-        <RecipeCard title = "Scrambled Eggs" cookingTime={10} image = './images/Scrambled-eggs.jpg' />
-        <RecipeCard title = "Spaghetti Bolognese" cookingTime={45} image = './images/Spaghetti-bolognese.jpg'/>
-        <RecipeCard title = "Caesar Salad" cookingTime={20} image = './images/Caesar-salad.jpg'/>
-        <RecipeCard title = "Vegetable Stir Fry" cookingTime={30} image = './images/Vegetable-stir-fry.jpg'/>
-        <RecipeCard title = "Grilled Cheese Sandwich" cookingTime={15} image = './images/Grilled-cheese-sando.jpg' />
-        <RecipeCard title = "Tomato Soup" cookingTime={45} image = './images/Tomato-soup.jpg'/>
-        <RecipeCard title = "Chicken Curry" cookingTime={45} image = './images/Chicken-curry.jpg'/>
-        <RecipeCard title = "French Toast" cookingTime={30} image = './images/French-toast.jpg'/>
-        <RecipeCard title = "Beef Tacos" cookingTime={45} image = './images/Beef-tacos.jpg'/>
-        <RecipeCard title = "Mashed Potatoes" cookingTime={30} image = './images/Mashed-potatoes.jpg'/>
-        <RecipeCard title = "Chicken Alfredo" cookingTime={45} image = './images/Chicken-alfredo.jpg'/>
-        <RecipeCard title = "Apple Pie" cookingTime={60} image = './images/Apple-pie.jpg'/>
-        <RecipeCard title = "Vegetable Soup" cookingTime={45} image = './images/Vegetable-soup.jpg'/>
-        <RecipeCard title = "Chocolate Cake" cookingTime={60} image = './images/Chocolate-cake.jpg'/>
+        {recipes.map((recipe) => (
+        <RecipeCard
+          title={recipe.title}
+          cookingTime={recipe.cookingTime}
+          image={recipe.image}
+          backgroundPosition={recipe.backgroundPosition}
+          backgroundSize={recipe.backgroundSize}
+        />
+      ))}
       </div>
+
     </div>
   );
 

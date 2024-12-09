@@ -4,20 +4,24 @@ import "./RecipeCard.css";
 import StarRatingIcon from '../assets/5-star-rating-icon.svg';
 import TimerIcon from '../assets/timer-icon.svg';
 
-const RecipeCard = ({ title, image, cookingTime }) => {
-  return (
-    <div className="RecipeCard">
-
-        <img src={image} alt={`${title} image`} className="RecipeImage" />
-
+const RecipeCard = ({ title, cookingTime, image, backgroundPosition, backgroundSize }) => {
+    return (
+      <div className="RecipeCard">
+        <div
+          className="RecipeImage"
+          style={{
+            borderRadius: "25px",
+            background: `url(${image}) lightgrey ${backgroundPosition} / ${backgroundSize} no-repeat`,
+          }}
+        ></div>
         <div className="RecipeCardInfo">
             <img src={StarRatingIcon} alt="5-Star-Rating-Icon" className="StarRatingIcon" />
             <img src={TimerIcon} alt="TimerIcon" className="TimerIcon" />
-            <text className="CookingTime">{cookingTime} mins</text>
             <text className="RecipeTitle">{title}</text>
+            <text className="CookingTime">{cookingTime} mins</text>
         </div>
-    </div>
-  );
-};
+      </div>
+    );
+  };
 
 export default RecipeCard;
