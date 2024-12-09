@@ -4,6 +4,7 @@ import FilterButton from "./components/FilterButton";
 import MenuIcon from './assets/menu-icon.svg';
 import SSHLogo from './assets/ssh-logo.svg';
 import RecipeAppIcon from './assets/recipe-app-icon.svg'
+import FilterIcon from './assets/filter-icon.svg'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
 
       <div className="FilterBar">
         <div className="FilterButtons">
+          <img src={FilterIcon} alt="Filter Icon" className="FilterIcon" />
           <FilterButton label="What's in my fridge?" />
           <FilterButton label="Ingredient selection" />
           <FilterButton label="Clear all filters" />
