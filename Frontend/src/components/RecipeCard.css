@@ -27,3 +27,27 @@
     top: 8px;
     left: 148px;
 }
+
+.CookingTime {
+    position: absolute;
+    top: 8px;
+    left: 166px;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.RecipeTitle {
+    position: absolute;
+    top: 27px;
+    left: 18px;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

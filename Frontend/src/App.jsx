@@ -42,21 +42,21 @@ function App() {
       </div>
 
       <div className='RecipeGrid'>
-        <RecipeCard label = "Panckes"/>
-        <RecipeCard label = "ScrambledEggs"/>
-        <RecipeCard label = "SpaghettiBolognese"/>
-        <RecipeCard label = "CaesarSalad"/>
-        <RecipeCard label = "VegetableStirFry"/>
-        <RecipeCard label = "GrillCheeseSando"/>
-        <RecipeCard label = "TomatoSoup"/>
-        <RecipeCard label = "ChickenCurry"/>
-        <RecipeCard label = "FrenchToast"/>
-        <RecipeCard label = "BeefTacos"/>
-        <RecipeCard label = "MashedPotatoes"/>
-        <RecipeCard label = "ChickenAlfredo"/>
-        <RecipeCard label = "ApplePie"/>
-        <RecipeCard label = "VegetableSoup"/>
-        <RecipeCard label = "ChocolateCake"/>
+        <RecipeCard title = "Pancakes" cookingTime={30} />
+        <RecipeCard title = "Scrambled Eggs" cookingTime={10} />
+        <RecipeCard title = "Spaghetti Bolognese" cookingTime={45} />
+        <RecipeCard title = "Caesar Salad" cookingTime={20} />
+        <RecipeCard title = "Vegetable Stir Fry" cookingTime={30} />
+        <RecipeCard title = "Grilled Cheese Sandwich" cookingTime={15} />
+        <RecipeCard title = "Tomato Soup" cookingTime={45} />
+        <RecipeCard title = "Chicken Curry" cookingTime={45} />
+        <RecipeCard title = "French Toast" cookingTime={30} />
+        <RecipeCard title = "Beef Tacos" cookingTime={45} />
+        <RecipeCard title = "Mashed Potatoes" cookingTime={30} />
+        <RecipeCard title = "Children Alfredo" cookingTime={45} />
+        <RecipeCard title = "Apple Pie" cookingTime={60} />
+        <RecipeCard title = "Vegetable Soup" cookingTime={45} />
+        <RecipeCard title = "Chocolate Cake" cookingTime={60} />
       </div>
     </div>
   );

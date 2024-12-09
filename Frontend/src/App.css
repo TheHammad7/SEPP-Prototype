@@ -137,7 +137,7 @@ body {
   grid-auto-rows: 220px;
   gap: 49px;
   justify-content: center;
-  align-content: start;
+  align-content: start; 
   width: 1027px;
   height: 964px;
   border-radius: 25px;
