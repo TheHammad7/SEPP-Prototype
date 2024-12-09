@@ -51,3 +51,10 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.RecipeImage {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 25px;
+}
