@@ -43,7 +43,7 @@ The purpose of this prototype is to showcase the effectiveness of the proposed d
 | **Frontend**            | **Backend**             | **Database**          | **Build Tool**       |
 |--------------------------|-------------------------|------------------------|-----------------------|
 | [![React][React.js]][React-url] | [![Spring Boot][Spring_boot]][Spring_boot-url] | [![MongoDB][MongoDB]][MongoDB-url] | [![Gradle][Gradle]][Gradle-url] |
-| ![HTML]                 | [![Java][Java]][Java-url] | [![Postgres][Postgres]][Postgres-url] |                       |
+| ![HTML]                 | [![Java][Java]][Java-url] |                       |
 | ![CSS]                  |                         |                        |                       |
 | ![JavaScript]           |                         |                        |                       |
 
@@ -113,8 +113,6 @@ Once all prerequisites are installed, follow the setup instructions to run the a
 [Java-url]: https://www.java.com/
 [MongoDB]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
 [MongoDB-url]: https://www.mongodb.com/
-[Postgres]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
-[Postgres-url]: https://www.postgresql.org/
 [Gradle]: https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white
 [Gradle-url]: https://gradle.org/
 
