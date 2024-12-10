@@ -1,0 +1,65 @@
+.App {
+}
+
+.ssh {
+  font-size: 35;
+  color: #989898;
+  font-weight: 700;
+  margin-right: 10%;
+}
+
+
+
+.header {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items:end;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.filterBar {
+  align-self: center;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  width:90%;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+
+.searchBox {
+  font-size: calc(8px + 3vmin);
+  width: 80%;
+  text-align: center;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  font-size: calc(50px+2vmin);
+  font-weight: 700;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+
