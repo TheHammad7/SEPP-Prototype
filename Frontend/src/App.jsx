@@ -7,12 +7,28 @@ import MenuIcon from './assets/menu-icon.svg';
 import SSHLogo from './assets/ssh-logo.svg';
 import RecipeAppIcon from './assets/recipe-app-icon.svg';
 import FilterIcon from './assets/filter-icon.svg';
+import { useState } from 'react';
+
 
 function App() {
+
+  const [recipeSearches, setRecipeSearches] = useState([]);
+  const [isFiltered, setIsFiltered] = useState(false);
 
   const handleMenuClick = (event) => {
     event.currentTarget.blur(); // Removes focus from the button
   };
+
+  const handleRecipesUpdate = (recipes) => {
+    setRecipeSearches(recipes);
+    alert("Applying Filters")
+  };
+
+  const clearAllFilters = () => {
+    setIsFiltered(false);
+    setRecipeSearches([]);
+    alert("Cleared Filters");
+  }
 
   return (
 
@@ -36,22 +52,38 @@ function App() {
       <div className="FilterBar">
         <div className="FilterButtons">
           <img src={FilterIcon} alt="Filter Icon" className="FilterIcon" />
-          <FilterButton label="What's in my fridge?" />
+          <FilterButton label="What's in my fridge?" onRecipesUpdate={handleRecipesUpdate} />
           <FilterButton label="Ingredient selection" />
-          <FilterButton label="Clear all filters" />
+          <FilterButton label="Clear all filters" onClick={clearAllFilters}/>
         </div>
       </div>
 
       <div className='RecipeGrid'>
-        {recipes.map((recipe) => (
-        <RecipeCard
-          title={recipe.title}
-          cookingTime={recipe.cookingTime}
-          image={recipe.image}
-          backgroundPosition={recipe.backgroundPosition}
-          backgroundSize={recipe.backgroundSize}
-        />
-      ))}
+        {isFiltered ? 
+        recipeSearches.length > 0? 
+        (
+          recipeSearches.map((recipe) => (
+            <RecipeCard
+              title={recipe.title}
+              cookingTime={recipe.cookingTime}
+              image={recipe.image}
+              backgroundPosition={recipe.backgroundPosition}
+              backgroundSize={recipe.backgroundSize}
+            />
+          ))
+        ):
+        (
+            <p>No recipes to display.</p>
+          ) :
+          recipes.map((recipe) => (
+            <RecipeCard
+              title={recipe.title}
+              cookingTime={recipe.cookingTime}
+              image={recipe.image}
+              backgroundPosition={recipe.backgroundPosition}
+              backgroundSize={recipe.backgroundSize}
+            />
+          ))}
       </div>
 
     </div>
