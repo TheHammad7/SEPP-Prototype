@@ -1,5 +1,6 @@
 const recipes = [
     {
+      key: 1,
       title: "Pancakes",
       cookingTime: 30,
       image: './images/Pancakes.jpg',
@@ -7,6 +8,7 @@ const recipes = [
       backgroundSize: "117.345% 78.7%",
     },
     {
+      key: 2,
       title: "Scrambled Eggs",
       cookingTime: 10,
       image: './images/Scrambled-eggs.jpg',
@@ -14,6 +16,7 @@ const recipes = [
       backgroundSize: "131.922% 77.727%",
     },
     {
+      key: 3,
       title: "Spaghetti Bolognese",
       cookingTime: 45,
       image: './images/Spaghetti-bolognese.jpg',
@@ -21,6 +24,7 @@ const recipes = [
       backgroundSize: "cover",
     },
     {
+      key: 4,
       title: "Caesar Salad",
       cookingTime: 20,
       image: './images/Caesar-salad.jpg',
@@ -28,6 +32,7 @@ const recipes = [
       backgroundSize: "121.766% 78.636%",
     },
     {
+      key: 5,
       title: "Vegetable Stir Fry",
       cookingTime: 30,
       image: './images/Vegetable-stir-fry.jpg',
@@ -35,6 +40,7 @@ const recipes = [
       backgroundSize: "102.144% 148.855%",
     },
     {
+      key: 6,
       title: "Grilled Cheese Sandwich",
       cookingTime: 15,
       image: './images/Grilled-cheese-sando.jpg',
@@ -42,6 +48,7 @@ const recipes = [
       backgroundSize: "cover",
     },
     {
+      key: 7,
       title: "Tomato Soup",
       cookingTime: 45,
       image: './images/Tomato-soup.jpg',
@@ -49,6 +56,7 @@ const recipes = [
       backgroundSize: "100% 141.724%",
     },
     {
+      key: 8,
       title: "Chicken Curry",
       cookingTime: 45,
       image: './images/Chicken-curry.jpg',
@@ -56,6 +64,7 @@ const recipes = [
       backgroundSize: "100% 125%",
     },
     {
+      key: 9,
       title: "French Toast",
       cookingTime: 30,
       image: './images/French-toast.jpg',
@@ -63,6 +72,7 @@ const recipes = [
       backgroundSize: "100% 100%",
     },
     {
+      key: 10,
       title: "Beef Tacos",
       cookingTime: 45,
       image: './images/Beef-tacos.jpg',
@@ -70,6 +80,7 @@ const recipes = [
       backgroundSize: "105% 79.048%",
     },
     {
+      key: 11,
       title: "Mashed Potatoes",
       cookingTime: 30,
       image: './images/Mashed-potatoes.jpg',
@@ -77,6 +88,7 @@ const recipes = [
       backgroundSize: "115.303% 87.273%",
     },
     {
+      key: 12,
       title: "Chicken Alfredo",
       cookingTime: 45,
       image: './images/Chicken-alfredo.jpg',
@@ -84,6 +96,7 @@ const recipes = [
       backgroundSize: "100% 150%",
     },
     {
+      key: 13,
       title: "Apple Pie",
       cookingTime: 60,
       image: './images/Apple-pie.jpg',
@@ -91,6 +104,7 @@ const recipes = [
       backgroundSize: "100% 150%",
     },
     {
+      key: 14,
       title: "Vegetable Soup",
       cookingTime: 45,
       image: './images/Vegetable-soup.jpg',
@@ -98,6 +112,7 @@ const recipes = [
       backgroundSize: "100% 100%",
     },
     {
+      key: 15,
       title: "Chocolate Cake",
       cookingTime: 60,
       image: './images/Chocolate-cake.jpg',
