@@ -1,154 +1,65 @@
-body {
+.App {
+}
+
+.ssh {
+  font-size: 35;
+  color: #989898;
+  font-weight: 700;
+  margin-right: 10%;
+}
+
+
+
+.header {
+  background-color: #f5f5f5;
   display: flex;
+  flex-direction: column;
+  align-items:end;
   justify-content: center;
-  align-items: flex-start;
-  margin: 0;
-  background-color: #D9D9D9;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
 }
 
-.MacbookAir1 {
-  position: relative;
-  width: 1280px; 
-  height: 1600px;
-  background: #FFF;
-}
-
-.PageHeader {
-  position: relative; 
-  width: 1280px;
-  height: 250px; 
-  background: transparent;
-}
-
-.Banner {
-  position: relative;
-  width: 1280px;
-  height: 115px;
-  background: #F5F5F5;
-}
-
-.Menu {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  width: 60px;
-  height: 60px;
-  top: 29px;
-  left: 33px;
-  cursor: pointer;
+.filterBar {
+  align-self: center;
+  background-color: #f5f5f5;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 8px;
-  border-radius: 50%;
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
-.Menu:hover {
-  transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-}
-
-.Menu:focus {
-  outline: none;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-}
-
-.Menu-icon {
-  width: 50px;
-  height: 50px;
-  transition: opacity 0.2s ease-in-out;
-}
-
-
-.Menu:hover .Menu-icon {
-  opacity: 0.8;
-}
-
-.SSHLogo {
-  position: absolute;
-  width: 141px;
-  height: 66px;
-  top: 24px;
-  left: 1090px;
-  opacity: 1;
-}
-
-.RecipeIcon {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 160px;
-  height: 149px;
-}
-
-.AppTitle {
-  position: absolute;
-  top: 189px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Inter', sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 60.51px;
   text-align: center;
-  color: #000;
-  width: 563px;
-}
-
-.FilterBarTitle {
-  position: absolute;
-  top: 323px;
-  left: 124px;
-  font-family: 'Inter', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: normal;
-  color: #000;
-}
-
-.FilterBar {
-  position: absolute;
-  left: 119px;
-  top: 373px;
-  width: 1057px;
-  height: 110px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: #F5F5F5;
-}
-
-.FilterButtons {
-  position: absolute;
-  display: flex;
-  top: 31px;
-  right: 51px;
-  gap: 60px;
-}
-
-.RecipeGrid {
-  position: absolute;
-  top: 533px;
-  left: 134px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 220px;
-  gap: 49px;
   justify-content: center;
-  align-content: start; 
-  width: 1027px;
-  height: 964px;
-  border-radius: 25px;
-  background: transparent;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  width:90%;
+  margin-left: 5%;
+  border-radius: 10px;
 }
 
-.RecipeImage {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 220px;
-  height: 220px;
-  flex-shrink: 0;
+.searchBox {
+  font-size: calc(8px + 3vmin);
+  width: 80%;
+  text-align: center;
 }
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  font-size: calc(50px+2vmin);
+  font-weight: 700;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+
