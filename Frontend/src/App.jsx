@@ -44,7 +44,6 @@ function App() {
   const handleIngredientClick = () => {
     if (activeButton === "fridge") {
       setActiveButton("ingredient");
-      
     } else if (activeButton !== "ingredient") {
       setActiveButton("ingredient");
     }
@@ -97,16 +96,38 @@ function App() {
       </div>
 
       <div className={`RecipeGrid ${animateGrid ? 'animate-grid' : ''}`}>
-        {filteredRecipes.map((recipe, index) => (
-          <RecipeCard
-            key={recipe.key}
-            title={recipe.title}
-            cookingTime={recipe.cookingTime}
-            image={recipe.image}
-            backgroundPosition={recipe.backgroundPosition}
-            backgroundSize={recipe.backgroundSize}
-          />
-        ))}
+        {filteredRecipes.map((recipe, index) => {
+          // Debugging filtered recipes on the first item
+          if (index === 0) {
+            console.group("Debugging Filtered Recipes");
+            console.log("Filtered Recipes Array:", filteredRecipes);
+
+            const ids = filteredRecipes.map((r) => r.id);
+            console.log("All IDs:", ids);
+
+            const duplicateIds = ids.filter((id, idx) => ids.indexOf(id) !== idx);
+            console.log("Duplicate IDs:", duplicateIds);
+
+            console.groupEnd();
+          }
+
+          // Debugging each recipe during rendering
+          console.group(`Rendering Recipe ${recipe.title}`);
+          console.log("Recipe ID:", recipe.id);
+          console.log("Recipe Object:", recipe);
+          console.groupEnd();
+
+          return (
+            <RecipeCard
+              key={recipe.key}
+              title={recipe.title}
+              cookingTime={recipe.cookingTime}
+              image={recipe.image}
+              backgroundPosition={recipe.backgroundPosition}
+              backgroundSize={recipe.backgroundSize}
+            />
+          );
+        })}
       </div>
     </div>
   );
