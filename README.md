@@ -38,7 +38,6 @@ The purpose of this prototype is to showcase the effectiveness of the proposed d
 5. **Mobile or Responsive Design:** The prototype is optimized for desktop use only.
 
 ### 💻 Tech Stack
-> This may change depending on how development goes. Just popping it in here as a way of scoping out our options. 😁 *- Casey*
 
 | **Frontend**            | **Backend**             | **Database**          | **Build Tool**       |
 |--------------------------|-------------------------|------------------------|-----------------------|
@@ -51,22 +50,18 @@ The purpose of this prototype is to showcase the effectiveness of the proposed d
 ## 🛠️ Getting Started
 
 ### 📋 Pre-requisites
-> ⚠️ Warning: This is probably not correct so will need to be revised closer to the deadline. 😅 Just putting it in as a placeholder. *- Casey*
 
 Before running the Prototype on your local machine, ensure the following pre-requisites are met:
 
 - **Java 17 or higher:** Required for running the backend application.
-- **Gradle:** To build and manage backend dependencies.
-- **MongoDB:** Either locally installed or a cloud-based MongoDB instance (e.g., MongoDB Atlas).
 - **Node.js:** For running the React frontend.
-- **Development Tools:** A code editor (e.g., IntelliJ IDEA or Visual Studio Code) and Postman for API testing.
+- **Development Tools:** A code editor (e.g., IntelliJ IDEA or Visual Studio Code).
 
 Once all prerequisites are installed, follow the setup instructions to run the application.
 
 ### ⬇️ Installation
-> Too lazy do it now but basically we should try to include step-by-step instructions on how to set up and configure everything. 😂 *- Casey*
+
 ## 📱 Usage
-> Feel free to add screensots, code snippets and extra details to outline usage where relevant.
 
 ### 🌱 Core Features
 **Ingredient-Based Recipe Suggestions**
@@ -93,10 +88,8 @@ Once all prerequisites are installed, follow the setup instructions to run the a
 - [Casey Shea][Casey-github]
 
 ## ⚖️ License
-> Apparenty it is quite common to include a license. 👀 Please refer our options [here][Choose-license-url] so that we can add one closer to time of submission. *- Casey*
 
 ## 🙌🏼 Acknowledgements
-> If we end up using any tools or resources from other developers/ creators within our prototype, please acknowledge them here!!
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

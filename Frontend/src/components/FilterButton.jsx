@@ -1,18 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./FilterButton.css";
 
-const FilterButton = ({ label, onClick }) => {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleClick = () => {
-    setIsActive(!isActive); // Toggle active state
-    if (onClick) onClick(); // Call optional onClick prop
-  };
-
+const FilterButton = ({ label, isActive, onClick }) => {
   return (
     <button
       className={`FilterButton ${isActive ? "active" : ""}`}
-      onClick={handleClick}
+      onClick={onClick} // Use the handler passed from App.jsx
     >
       {label}
     </button>
@@ -20,3 +13,4 @@ const FilterButton = ({ label, onClick }) => {
 };
 
 export default FilterButton;
+
