@@ -14,6 +14,7 @@ import { useState, useEffect } from 'react';
 function App() {
   const [filteredRecipes, setFilteredRecipes] = useState(recipes); // Maintain state for recipes
   const [animateGrid, setAnimateGrid] = useState(false); // Track animation for the grid
+  const [activeButton, setActiveButton] = useState(null); // Track the active button
 
   const triggerGridAnimation = () => {
     setAnimateGrid(false); // Reset animation
@@ -33,9 +34,26 @@ function App() {
     }
   };
 
+  const handleFridgeClick = () => {
+    if (activeButton !== "fridge") {
+      setActiveButton("fridge");
+      fetchRecipes(); // Fetch recipes only when activating
+    }
+  };
+
+  const handleIngredientClick = () => {
+    if (activeButton === "fridge") {
+      setActiveButton("ingredient");
+      
+    } else if (activeButton !== "ingredient") {
+      setActiveButton("ingredient");
+    }
+  };
+
   const clearFilters = () => {
-    setFilteredRecipes(recipes);
-    triggerGridAnimation(); // Trigger animation
+    setActiveButton(null);
+    setFilteredRecipes(recipes); // Reset to default recipes
+    triggerGridAnimation();
   };
 
   useEffect(() => {
@@ -60,9 +78,21 @@ function App() {
       <div className="FilterBar">
         <div className="FilterButtons">
           <img src={FilterIcon} alt="Filter Icon" className="FilterIcon" />
-          <FilterButton label="What's in my fridge?" onClick={fetchRecipes} />
-          <FilterButton label="Ingredient selection" />
-          <FilterButton label="Clear all filters" onClick={clearFilters} />
+          <FilterButton
+            label="What's in my fridge?"
+            isActive={activeButton === "fridge"}
+            onClick={handleFridgeClick}
+          />
+          <FilterButton
+            label="Ingredient selection"
+            isActive={activeButton === "ingredient"}
+            onClick={handleIngredientClick}
+          />
+          <FilterButton
+            label="Clear all filters"
+            isActive={false} // Always inactive
+            onClick={clearFilters}
+          />
         </div>
       </div>
 
